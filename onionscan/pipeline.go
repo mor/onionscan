@@ -33,7 +33,7 @@ func (p *Pipeline) AddStep(step PipelineStep) {
 // Execute takes a hidden service address and puts it through the configured
 // pipeline.
 func (p *Pipeline) Execute(hiddenService string) {
-
+        fmt.Printf("attempted scan on: %s", hiddenService)
 	// Remove Extra Prefix
 	hiddenService = utils.WithoutProtocol(hiddenService)
 
